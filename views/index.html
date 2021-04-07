@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Заметки</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-style">
+
+        <form name="registerForm" enctype="multipart/form-data" class="form-style">
+            <textarea cols="50" rows="4" maxlength="50" class="textarea-style" id="note" name="note"></textarea>
+
+            <div class="date-selection">
+                <input type="time" name="time"/>
+            </div>
+
+            <div class="file-selection">
+                <input lang="en" type="file" name="file"/>
+            </div>
+
+            <div class="but-block">
+                <button class="but" type="submit" id="submit">Save</button>
+            </div>
+
+            <a class="auth-img" id="signLink" href="/auth"><img id="signImage" vspace="5" src="views/pic/auth48.png"/></a>
+        </form>
+
+        <div class="note-block">
+            <div class="table-block">
+                <h1 class="header">Notes</h1>
+                <table class="note-table" rules="rows" cellpadding="5">
+                    <tbody id="notes_tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+<html>
